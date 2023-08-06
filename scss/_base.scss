@@ -1,3 +1,5 @@
+@use "media-queries" as *;
+
 body {
   font-family: var(--font-family);
   color: var(--primaryW);
@@ -13,6 +15,9 @@ body {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgb(218, 218, 218);
+  @include xs {
+    padding: 1.5rem;
+  }
 }
 
 .profil {
@@ -28,11 +33,6 @@ body {
 img {
   border-radius: 50%;
   margin: 0 1rem 0 0;
-}
-
-.quotation {
-  border-radius: 0%;
-  margin-inline-start: auto;
 }
 
 .testimonial1 {

@@ -3,11 +3,11 @@
 @use "media-queries" as *;
 
 .grid-container {
-  min-height: 65vh;
-  max-width: 65vw;
+  min-height: 50vh;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 45% 45%;
   grid-template-areas:
     "dc dc jw kw"
     "jh pa pa kw";
@@ -25,14 +25,33 @@
   grid-area: dc;
   background: var(--primaryMV);
   padding: 0 2rem 2rem 2rem;
+  @include xs {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
   .graduate {
     color: var(--primaryMVL);
   }
+  .profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .testimonial1 {
-    margin: 0 0 1rem 0;
+    position: relative;
+    bottom: 2.5rem;
+    @include xs {
+      padding: 0 0 1rem 0;
+      margin: 2rem 0 0 0;
+    }
   }
   .testimonial2 {
     color: var(--primaryMVL);
+    position: relative;
+    bottom: 2.5rem;
+    @include xs {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -68,5 +87,19 @@
 
   .graduate {
     color: var(--primaryGBL);
+  }
+}
+
+.quotation {
+  margin-inline-start: auto;
+  border-radius: 0%;
+  height: 130px;
+  width: 130px;
+  @include xs {
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 1.2rem;
   }
 }
