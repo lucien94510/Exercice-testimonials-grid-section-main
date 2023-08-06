@@ -1,0 +1,72 @@
+@use "reset" as *;
+@use "base" as *;
+@use "media-queries" as *;
+
+.grid-container {
+  min-height: 65vh;
+  max-width: 65vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "dc dc jw kw"
+    "jh pa pa kw";
+  gap: 2rem;
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    border-radius: 0;
+    padding: 3rem 1.5rem;
+  }
+}
+
+.testimonial:nth-child(1) {
+  grid-area: dc;
+  background: var(--primaryMV);
+  padding: 0 2rem 2rem 2rem;
+  .graduate {
+    color: var(--primaryMVL);
+  }
+  .testimonial1 {
+    margin: 0 0 1rem 0;
+  }
+  .testimonial2 {
+    color: var(--primaryMVL);
+  }
+}
+
+.testimonial:nth-child(2) {
+  grid-area: jw;
+  background: var(--primaryGB);
+  .graduate {
+    color: var(--primaryGBL);
+  }
+}
+
+.testimonial:nth-child(3) {
+  grid-area: kw;
+  background: var(--primaryW);
+  color: var(--primaryBB);
+  .graduate {
+    color: var(--primaryGBL);
+  }
+}
+
+.testimonial:nth-child(4) {
+  grid-area: jh;
+  background: var(--primaryW);
+  color: var(--primaryBB);
+  .graduate {
+    color: var(--primaryGBL);
+  }
+}
+
+.testimonial:nth-child(5) {
+  grid-area: pa;
+  background: var(--primaryBB);
+
+  .graduate {
+    color: var(--primaryGBL);
+  }
+}

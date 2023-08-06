@@ -1,0 +1,13 @@
+:root {
+  --font-family: "Barlow Semi Condensed", sans-serif;
+  --primaryMV: hsl(263, 55%, 52%);
+  --primaryGB: hsl(217, 19%, 35%);
+  --primaryBB: hsl(219, 29%, 14%);
+  --primaryW: hsl(0, 0%, 100%);
+  --neutralgray: hsl(0, 0%, 81%);
+  --neutralgrayishblue: hsl(210, 46%, 95%);
+  --primaryMVL: hsl(263, 55%, 70%);
+  --primaryGBL: hsl(217, 19%, 70%);
+}
+
+/*# sourceMappingURL=variable.css.map */

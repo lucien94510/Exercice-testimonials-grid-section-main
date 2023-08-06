@@ -1,0 +1,46 @@
+body {
+  font-family: var(--font-family);
+  color: var(--primaryW);
+  font-size: 13px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--neutralgrayishblue);
+}
+
+.testimonial {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(218, 218, 218);
+}
+
+.profil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.graduate {
+  font-size: 0.8rem;
+}
+
+img {
+  border-radius: 50%;
+  margin: 0 1rem 0 0;
+}
+
+.quotation {
+  border-radius: 0%;
+  margin-inline-start: auto;
+}
+
+.testimonial1 {
+  margin: 1rem 0 0 0;
+  font-size: 1.3rem;
+}
+
+.testimonial2 {
+  margin: 1rem 0 0rem 0;
+  line-height: 1.3rem;
+}

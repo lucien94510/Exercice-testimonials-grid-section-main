@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--primaryW);
+  font-size: 13px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--neutralgrayishblue);
+}
+
+.testimonial {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(218, 218, 218);
+}
+
+.profil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.graduate {
+  font-size: 0.8rem;
+}
+
+img {
+  border-radius: 50%;
+  margin: 0 1rem 0 0;
+}
+
+.quotation {
+  border-radius: 0%;
+  margin-inline-start: auto;
+}
+
+.testimonial1 {
+  margin: 1rem 0 0 0;
+  font-size: 1.3rem;
+}
+
+.testimonial2 {
+  margin: 1rem 0 0rem 0;
+  line-height: 1.3rem;
+}
+
+.grid-container {
+  min-height: 65vh;
+  max-width: 65vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "dc dc jw kw" "jh pa pa kw";
+  gap: 2rem;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    border-radius: 0;
+    padding: 3rem 1.5rem;
+  }
+}
+
+.testimonial:nth-child(1) {
+  grid-area: dc;
+  background: var(--primaryMV);
+  padding: 0 2rem 2rem 2rem;
+}
+.testimonial:nth-child(1) .graduate {
+  color: var(--primaryMVL);
+}
+.testimonial:nth-child(1) .testimonial1 {
+  margin: 0 0 1rem 0;
+}
+.testimonial:nth-child(1) .testimonial2 {
+  color: var(--primaryMVL);
+}
+
+.testimonial:nth-child(2) {
+  grid-area: jw;
+  background: var(--primaryGB);
+}
+.testimonial:nth-child(2) .graduate {
+  color: var(--primaryGBL);
+}
+
+.testimonial:nth-child(3) {
+  grid-area: kw;
+  background: var(--primaryW);
+  color: var(--primaryBB);
+}
+.testimonial:nth-child(3) .graduate {
+  color: var(--primaryGBL);
+}
+
+.testimonial:nth-child(4) {
+  grid-area: jh;
+  background: var(--primaryW);
+  color: var(--primaryBB);
+}
+.testimonial:nth-child(4) .graduate {
+  color: var(--primaryGBL);
+}
+
+.testimonial:nth-child(5) {
+  grid-area: pa;
+  background: var(--primaryBB);
+}
+.testimonial:nth-child(5) .graduate {
+  color: var(--primaryGBL);
+}
+
+/*# sourceMappingURL=style.css.map */
